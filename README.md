@@ -11,16 +11,16 @@ These instructions for installing Rasa are for Ubuntu - for Windows or Mac, go t
 
 ```
 $ sudo apt update
-Install python3
+# Install python3
 $ sudo apt install python3-dev python3
 $ sudo apt install python3-venv
 $ mkdir Rasa
 $ cd Rasa
-Create virtual environment
+# Create virtual environment
 $ python3 -m venv ./venv
-Activate venv environment
+# Activate venv environment
 $ source ./venv/bin/activate
-Install Rasa and Upgrade pip
+# Install Rasa and Upgrade pip
 (venv)$ python -m pip install --upgrade pip rasa
 # downgrade protobut to 3.20.* to avoid error
 (venv)$ python -m pip install protobuf==3.20.*
